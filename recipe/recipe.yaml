@@ -35,7 +35,9 @@ tests:
       imports:
         - rfc3161ng
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Python implementation of the RFC3161 specification, using pyasn1
